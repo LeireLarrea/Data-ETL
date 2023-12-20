@@ -3,6 +3,14 @@ from collections import ChainMap
 from typing import List
 
 
+# you can call this utility by:
+# def transform_function_xlsx_to_csv(source_s3_key: str, f_dest_dir: str) -> Sequence[str]:
+#         """Receives a path to an excel file, and returns a list of paths where the csvs for each tab are created"""
+#         utils_excel = Utils_Excel()
+#         return [str(x) for x in utils_excel.to_csv(Path(source_s3_key), Path(f_dest_dir))]
+
+
+
 default_sheet_args = {
     "header_offset": None,
     # "start_index": 1,
